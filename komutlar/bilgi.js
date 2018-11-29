@@ -15,9 +15,9 @@ exports.run = (client, message) => {
     .setColor("RANDOM")
     .setAuthor("Bot Bilgi Menüsü", client.user.displayAvatarURL)
     .setDescription("")
-	.addField("**Gresp BOT Hikayesi**", " \nGresp BOT fikri aslında başka bir bot'tan çıktı. Aslında o bot'ta bizimdi ama biz o botun ismini değiştirmeye çalıştığımızda hata veriyordu. O yüzden bu botla tekrar geri döndük. Komutlarda bazı değişikliklere gidildi. İnşallah beğenirsiniz.")
-	.addField("Bot Sahibi", `[Marcus#7950](https://discord.gg/yZduSWC)`)
-	.addField("Destek Sunucusu", "[Destek sunucusuna katılın!](https://discord.gg/yZduSWC)")
+  .addField("Bot Prefix", `${ayarlar.prefix}`)
+	.addField("Bot Sahibi", `[Marcus#7950](www.twitch.tv/wtcN)`)
+	.addField("Destek Sunucusu", "[Destek sunucusuna katılın!](https://discord.gg/G5MpESq)")
 	.setFooter(`${message.author.username} tarafından istendi.`)
     return message.author.sendEmbed(pingozel)
 };
