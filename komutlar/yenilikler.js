@@ -6,7 +6,7 @@ var prefix = ayarlar.prefix;
 exports.run = (client, message, params) => {
   const embedyardim = new Discord.RichEmbed()
   .setAuthor(message.author.username, message.author.avatarURL)
-  .setDescription(' \nSürüm: **1.1** \n \n``g!atatürk`` komutu eklendi! \n``g!atatürk-bilgi`` komutu eklendi! \n``g!efkarlı-sözler`` komutu eklendi! \n``g!steam-oyun-fiyat`` komutu eklendi! \n``g!csgo-kasa-açma`` komutu eklendi! \n \nBütün komutları görmek için g!komutlar kullanabilirsiniz.')
+  .setDescription(' \nFerb Bot Sürüm: **0.1** \n \n Şuanda botumuz yeni olduğu için yenilikler paylaşılmayacaktır. ')
   .setColor("RANDOM")
   .setFooter(`${message.author.username} tarafından istendi.`)
   .setThumbnail(client.user.avatarURL)
