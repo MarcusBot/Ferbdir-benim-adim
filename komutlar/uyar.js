@@ -17,7 +17,7 @@ exports.run = (client, message, args) => {
   if (message.mentions.users.size < 1) return message.channel.send(':no_entry: Kimi uyaracağımı yazmadığın için kimseyi uyaramıyorum.').catch(console.error);
   const embed = new Discord.RichEmbed()
   .setColor("RANDOM")
-  .setFooter('Gresp', client.user.displayAvatarURL)
+  .setFooter('Ferb', client.user.displayAvatarURL)
   .setTimestamp()
   .addField('Eylem', 'Uyarı')
   .addField('Kullanıcı', `${user.username}#${user.discriminator}`)
