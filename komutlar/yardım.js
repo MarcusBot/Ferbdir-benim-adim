@@ -4,11 +4,12 @@ const ayarlar = require('../ayarlar.json');
 var prefix = ayarlar.prefix;
 
 exports.run = (client, message, params) => {
+  let komut = ('yardim komutu')
   const embedyardim = new Discord.RichEmbed()
   .setAuthor("Komutlar", client.user.displayAvatarURL)
-  .setDescription('**g!eğlence** - Eğlence komutlarını gösterir. \n**g!yemek**- Yemek komutlarını gösterir. \n**g!matematik**- Matematik komutlarını gösterir. \n**g!moderasyon**- Moderasyon komutlarını gösterir. \n**g!sunucu**- Sunucu komutlarını gösterir. \n[Bot Destek Sunucusu](https://discord.gg/XDbBmw)')
+  .setDescription(`${prefix}**sunucu** - Sunucu komutları \n${prefix}**eğlence** - Eğlence komutları \n${prefix}**matematik** - Matematik komutları \n${prefix}**moderasyon** - Moderasyon komutları`)
+    .addField("Kullanılabilir Linkler", "[Destek Sunucusu](https://discord.gg/Ax3vpaq) | [Sunucuna Ekle](https://discordapp.com/oauth2/authorize?client_id=517052307792461864&permissions=8&scope=bot)")
   .setColor("RANDOM")
-  .setFooter(`${message.author.username} tarafından istendi.`)
   .setThumbnail(client.user.avatarURL)
   if (!params[0]) {
     const commandNames = Array.from(client.commands.keys());
