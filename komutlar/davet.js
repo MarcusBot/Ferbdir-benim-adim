@@ -16,7 +16,7 @@ exports.run = (client, message) => {
 	.setThumbnail(client.user.avatarURL)
 	.setFooter(`${message.author.username} tarafından kullanıldı.`)
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('[Gresp BOT Davet Linki | Üzerine tıklayarak gidebilirsiniz!](https://discordapp.com/api/oauth2/authorize?client_id=453137622173351936&permissions=8&scope=bot)');
+    .setDescription(`Ferb'ü sunucuna eklemek için [buraya](https://discordapp.com/oauth2/authorize?client_id=517052307792461864&permissions=8&scope=bot) tıklayabilirsin.`);
     return message.author.sendEmbed(pingozel)
 };
 
