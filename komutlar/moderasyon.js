@@ -7,8 +7,7 @@ exports.run = (client, message, params) => {
   const embedyardim = new Discord.RichEmbed()
   .setDescription('')
   .setColor("RANDOM")
-  .addField("**Moderasyon Komutları**", '\n' + prefix + 'at | İstediğiniz kullanıcıyı sunucudan atarsınız. \n' + prefix + 'sustur | İstediğiniz kullanıyı susturursunuz. \n' + prefix + 'uyar | İstediğiniz kullanıcıyı uyarırsınız. \n' + prefix + 'duyuru | Daha güzel bir şekilde duyuru yapmanızı sağlar. \n' + prefix + 'temizle | 1 ile 100 arası mesajları siler.')
-  .setFooter('Gresp | Bu komutları sadece sunucudaki yetkililer kullanabilirler.', client.user.displayAvatarURL)
+  .addField("**Moderasyon Komutları**", '\n' + prefix + '**at** | İstediğiniz kullanıcıyı sunucudan atar. \n' + prefix + '**sustur** | İstediğiniz kullanıyı susturur. \n' + prefix + '**uyar** | İstediğiniz kullanıcıyı uyarır. \n' + prefix + '**duyuru** | Daha iyi bir duyuru görünümü sağlar. \n' + prefix + '**temizle** | 1 ile 100 arası mesajları siler. \n' + prefix +'**otorol-ayarla** | Otorolü ayarlar. \n' + prefix + '**rolver** | Etiketlediğiniz kişiye yazdığınız rolü verir. \n' + prefix +'**rolsil** | Etiketlediğiniz kişinin yazdığınız rolünü alır. \n' + prefix +'**kanalaç** | Konuşma kanalı açar.')
   .setThumbnail(client.user.avatarURL)
   if (!params[0]) {
     const commandNames = Array.from(client.commands.keys());
